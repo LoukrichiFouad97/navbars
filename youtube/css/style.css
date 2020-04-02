@@ -1,0 +1,99 @@
+:root {
+	--youtube-red-color: #c4302b;
+	--youtube-dark-color: #333;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+.nav {
+	padding: 1rem;
+	width: 100%;
+	background-color: var(--youtube-dark-color);
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Nav Logo */
+.nav .logo {
+	/* background-color: #f80; */
+	display: flex;
+	align-items: center;
+}
+.nav .logo .menu {
+	height: 40px;
+	width: 40px;
+	background-color: inherit;
+	border: 0;
+  flex: 1;
+  margin-right: 20px;
+}
+.nav .bar {
+	height: 2px;
+	width: 20px;
+	background-color: #fff;
+	display: block;
+	margin: auto;
+	margin-bottom: 3px;
+}
+.nav .brand {
+	font-size: 1.5rem;
+	color: var(--youtube-red-color);
+}
+.nav .main-title {
+	font-weight: bolder;
+	font-size: 1.2rem;
+	letter-spacing: -1px;
+	margin-left: 5px;
+}
+.nav .main-title sup {
+	font-weight: lighter;
+	font-size: 0.8rem;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	color: #b2b2b2;
+}
+
+.nav .search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav .search input {
+	border: 1px solid #444;
+	background-color: #222;
+	padding: 10px;
+	width: 200px;
+}
+@media (min-width: 800px) {
+	.nav .search input {
+		width: 600px;
+	}
+}
+.nav .search i {
+  background-color: #555;
+  color: #ccc;
+	padding: 10px 25px;
+}
+
+.nav .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav .buttons button {
+  margin-right: 20px;
+  background-color: inherit;
+  border: 0;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.nav .account-image img {
+  border-radius: 50%;
+}
